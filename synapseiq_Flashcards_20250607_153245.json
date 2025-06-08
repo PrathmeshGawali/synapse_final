@@ -1,0 +1,34 @@
+{
+  "id": "205f50de-a143-47ab-8095-c028fe3d33d7",
+  "feature_type": "Flashcards",
+  "content": {
+    "flashcards": [
+      {
+        "question": "What is the fundamental idea of neuromorphic computing inspired by?",
+        "answer": "Biological neural networks",
+        "hint": "Think about the structure and operation of the human brain"
+      },
+      {
+        "question": "What is the basic component of neuromorphic computing?",
+        "answer": "Spiking Neural Networks (SNNs)",
+        "hint": "It's related to how the brain processes information"
+      },
+      {
+        "question": "What is the benefit of event-driven computation in neuromorphic computing?",
+        "answer": "Lower overall energy consumption",
+        "hint": "It's related to how the brain responds to events"
+      },
+      {
+        "question": "What is the advantage of neuromorphic architectures in handling spatiotemporal data?",
+        "answer": "Efficient processing with less latency and energy consumption",
+        "hint": "Think about how the brain processes complex data"
+      },
+      {
+        "question": "What is the potential application of neuromorphic computing in BMIs?",
+        "answer": "Enhancement of signal processing",
+        "hint": "Think about how BMIs can improve with neuromorphic computing"
+      }
+    ]
+  },
+  "timestamp": "2025-06-07T15:32:43.849881"
+}

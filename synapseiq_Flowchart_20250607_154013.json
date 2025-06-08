@@ -1,0 +1,6 @@
+{
+  "id": "d74b378b-7984-40d4-852c-fe35cfbe5114",
+  "feature_type": "Flowchart",
+  "content": "flowchart LR\nneuromorphic_computing(\"Neuromorphic Computing\")\nbiologically_inspired_architecture[\"Biologically-Inspired Architecture\"]\nspiking_neural_networks[\"Spiking Neural Networks (SNNs\"]\nevent_driven_computation[\"Event-Driven Computation\"]\nneuromorphic_architectures[\"Neuromorphic Architectures\"]\napplications_of_neuromorphic_computing[\"Applications of Neuromorphic Computing\"]\nenhancement_of_signal_processing[\"Enhancement of Signal Processing\"]\nneuromorphic_computing --> biologically_inspired_architecture\nneuromorphic_computing --> spiking_neural_networks\nneuromorphic_computing --> event_driven_computation\nneuromorphic_architectures --> applications_of_neuromorphic_computing\napplications_of_neuromorphic_computing --> enhancement_of_signal_processing",
+  "timestamp": "2025-06-07T15:40:11.083159"
+}

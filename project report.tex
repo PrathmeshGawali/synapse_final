@@ -1,0 +1,1657 @@
+\documentclass[12pt]{article}
+\usepackage{graphicx} % Required for inserting images
+\def\hide#1{\textcolor{white}
+\setmainfont{Times Roman}
+{#1}}
+
+\usepackage[utf8]{inputenc} % 'cp1252'-Western, 'cp1251'-Cyrillic, etc.
+\usepackage[english]{babel} % 'french', 'german', 'spanish', 'danish', etc.
+\usepackage{amsmath}
+\usepackage{amssymb}
+\usepackage{txfonts}
+\usepackage{mathdots}
+\usepackage{pdfpages}
+\usepackage{graphicx}
+\usepackage[export]{adjustbox}
+\usepackage{fancyhdr}
+\usepackage{fancyheadings}
+\usepackage{enumitem}
+\usepackage{hyperref}
+\usepackage{hyphenat}
+\hyphenpenalty=1000
+\usepackage{setspace}
+\usepackage{booktabs}
+
+
+\usepackage[classicReIm]{kpfonts}
+\usepackage{graphicx}
+\usepackage[document]{ragged2e}
+\usepackage{geometry}
+ \geometry{
+ a4paper,
+ total={197mm,210mm},
+ left=37mm,
+ top=23.4mm,
+ right=23.4mm,
+ bottom=32mm,
+ }
+
+\pagestyle{fancy}
+%\pagenumbering{roman}
+\lfoot{PVG’s COET and GKPIM Pune, \\
+Department of Computer Engineering 2023-24}
+
+
+
+\begin{document}
+\pagenumbering{Roman}
+%\selectlanguage{english} % remove comment delimiter ('%') and select language if required
+
+
+\noindent
+
+\noindent
+
+\noindent
+
+\noindent  
+
+\noindent
+
+\noindent  
+
+\noindent
+
+\noindent
+
+\noindent  
+
+\noindent
+
+\begin{center}
+\fontsize{12}{12}\textbf{A PROJECT REPORT ON} \linebreak
+\\
+\fontsize{16}{16}\textbf{TRANSFORMING PRESS RELEASE WITH AUTOMATED VIDEO GENERATION}
+\bigskip
+\\
+\fontsize{12}{12}SUBMITTED TO THE SAVITRIBAI PHULE PUNE UNIVERSITY, PUNE IN THE PARTIAL FULFILLMENT OF THE REQUIREMENTS FOR THE AWARD OF THE DEGREE\\
+\medskip
+\fontsize{12}{12}OF
+\bigskip
+\\
+\fontsize{16}{16}\textbf{BACHELOR OF ENGINEERING (COMPUTER ENGINEERING)
+}
+\linebreak
+\\
+\fontsize{12}{12}\textbf{SUBMITTED BY}\\
+
+\bigskip
+\vspace{5mm}
+\begin{tabular}{|l|l|}
+\hline
+Student's Name       & Seat no. \\
+\hline
+Kasturi Bhandare    & B190074206 \\
+\hline
+Aniket Gaudgaul      &  B190074224\\
+\hline
+Nisarg Kudgunti & B190074238 \\
+\hline
+
+\end{tabular}
+
+\bigskip
+
+\bigskip
+
+\noindent \includegraphics*[width=2.08in, height=1.94in]{col_logo}
+
+\bigskip
+\fontsize{16}{16}\textbf{DEPARTMENT OF COMPUTER ENGINEEING} \linebreak
+
+\bigskip
+\fontsize{12}{12}\textbf{PVG’s COLLEGE OF ENGINEERING AND TECHNOLOGY \& G K PATE(WANI) INSTITUTE OF MANAGEMENT} \linebreak
+
+\fontsize{12}{12} 44, VIDYANAGARI, PARVATI, PUNE 411009 \\
+\bigskip
+\fontsize{12}{12} \textbf{SAVITRIBAI PHULE PUNE UNIVERSITY} \linebreak
+
+
+\textbf{2023-2024}
+
+
+\medskip
+\vspace{5mm}
+\end{center}
+\pagebreak{}
+\noindent \begin{center}
+
+
+\noindent \includegraphics*[width=2.08in, height=1.90in]{col_logo}
+
+\bigskip
+\fontsize{14}{14}\textbf{CERTIFICATE }
+\smallskip
+
+\noindent \justify
+\begin{center}
+   \vspace{5mm} This is to certify that the Project report entitled\\
+    \vspace{5mm}
+\fontsize{12}{12}\textbf{TRANSFORMING PRESS RELEASE WITH AUTOMATED VIDEO GENERATION}\\
+
+\vspace{5mm}
+Submitted By\\
+\vspace{5mm}
+\begin{tabular}{|l|l|}
+\hline
+Student's Name       & Seat no. \\
+\hline
+Kasturi Bhandare    & B190074206 \\
+\hline
+Aniket Gaudgaul      & B190074224 \\
+\hline
+Nisarg Kudgunti & B190074238 \\
+\hline
+
+\hline
+\end{tabular}
+
+\end{center}
+\medskip
+\medskip
+is a bonafide student of this institute and the work has been carried out by him/her under the supervision of  \textbf{Prof. B. C. Julme} and it is approved for the partial fulfillment of the requirement of Savitribai Phule Pune University, for the award of the degree of \textbf{Bachelor of Engineering} (Computer Engineering) in the year 2023-24. 
+
+\bigskip
+
+\noindent
+\medskip
+\bigskip
+\begin{flushleft} \hspace{40pt}  (Prof. B. C. Julme)  \hspace{135pt}  (Prof. U. M. Kalshetti) \end{flushleft}
+
+\begin{flushleft} \hspace{70pt}  Guide  \hspace{205pt}  Head \end{flushleft}
+
+\begin{flushleft} \hspace{0pt}  Department of Computer Engineering  \hspace{10pt}  Department of Computer Engineering
+ \end{flushleft}
+\vspace{10mm}
+\begin{flushleft}
+    \hspace{150pt} (Dr. M. R. Tarambale)
+\end{flushleft}
+\begin{flushleft}
+    \hspace{165pt} I/C Principal,
+    \noindent
+\end{flushleft}
+\begin{flushleft}
+    \hspace{30pt} PVG’s College of Engineering and Technology \& GKPIM, Pune – 09
+\end{flushleft}
+\end{center}
+
+\noindent\begin{flushleft}\textbf{Place: -} Pune  \end{flushleft}
+\noindent\begin{flushleft}\textbf{Date: - } \end{flushleft}
+
+\noindent
+
+\noindent
+
+\noindent
+
+\noindent
+
+\noindent
+
+\noindent
+
+\pagebreak{}
+%\pagenumbering{roman}
+
+\noindent
+
+\noindent
+
+\noindent
+
+\noindent  
+
+\noindent
+
+\noindent  
+
+\noindent
+
+\noindent
+
+\noindent  
+
+\noindent
+\onehalfspacing
+\begin{center} \fontsize{14}{14}\textbf{ ACKNOWLEDGEMENT } \end{center}
+
+\justify
+\hspace{5mm}We extend our heartfelt gratitude to our esteemed guide, Prof. B. C. Julme Ma’am, Assistant Professor in the Computer Engineering Department. Her unwavering support, concern, and invaluable assistance have played a pivotal role in the successful completion of this work. Prof. Julme Ma’am's guidance has not only facilitated the exploration of this expansive topic but has also instilled a sense of organization and direction in our research endeavors.\\
+
+Additionally, we express our sincere thanks to Prof. Urmila Kalshetti Ma'am, Head of the Department of Computer Engineering, for her motivating words and inspirational guidance. Her encouragement has been a driving force behind our project work, turning it into a truly enriching learning experience.
+We are also indebted to our Principal, Dr. Manoj Tarambale Sir, of Pune Vidyarthi Griha’s College of Engineering and Technology, G. K. Pate (Wani) Institute of Management. His unwavering support and provision of essential facilities have been instrumental in the success of this endeavor. We appreciate the conducive environment provided by the institution for fostering research and academic excellence.
+
+\bigskip
+\bigskip
+\bigskip
+\bigskip
+
+\bigskip  
+\noindent  
+\raggedleft NAME OF THE STUDENTS:  \\
+1. Kasturi Bhandare\\
+2. Aniket Gaudgaul \\
+3. Nisarg Kudgunti  \\
+
+
+\pagebreak{}
+
+\begin{center} \fontsize{14}{14}\textbf{ABSTRACT }  \end{center}
+
+
+\justify      
+\hspace{5mm}In response to the evolving landscape of information consumption and diminishing attention spans, this project presents a comprehensive software solution designed to transform Press Releases from the Press Information Bureau (PIB) into engaging video content. The proposed system leverages Natural Language Processing (NLP) techniques for text summarization and keyword extraction, allowing for the automatic generation of video summaries and the identification of relevant images and clips associated with the press release topic. \\
+
+The project includes the development of a database housing a curated collection of copyright-free images and clips, each tagged with descriptive captions. Through image processing and video stitching, the software seamlessly converts textual content into visually engaging videos. To ensure accuracy and compliance, generated videos undergo a vetting process by designated PIB officers before publication. Upon approval, the system automatically disseminates the video content across designated social media platforms, enhancing the reach and impact of PIB's communications. \\
+
+The need for this project stems from the growing demand for easily consumable and visually appealing content. By transforming text-based press releases into engaging video content, this project aims to bridge this gap and cater to the changing preferences of modern audiences. Additionally, by automating the process of video creation and dissemination, the project addresses the need for efficiency and scalability in information dissemination efforts.\\
+
+Ultimately, this project seeks to enhance the effectiveness of PIB's communication strategies and ensure that their messages reach a wider audience in a more impactful manner.
+
+
+\noindent \textbf{ }
+\pagebreak
+
+\begin{center} \fontsize{14}{14}\textbf{TABLE OF CONTENTS }${}_{\ }$
+\bigskip
+
+\justify
+\begin{flushleft} \hspace{10pt}  LIST OF ABBREVIATIONS  \hspace{45pt}  VIII \end{flushleft}
+
+\begin{flushleft} \hspace{10pt}  LIST OF FIGURES  \hspace{93pt}  IX \end{flushleft}
+\begin{flushleft} \hspace{10pt}  LIST OF TABLES  \hspace{100pt}  X \end{flushleft}
+
+\begin{tabular}{|p{0.35in}|p{0.4in}|p{3.3in}|p{0.8in}|} \hline 
+\multicolumn{2}{|p{1in}|} {\fontsize{12}{12} \textbf{SR. NO.}} & \fontsize{12}{12}\textbf{TITLE OF CHAPTER}  & \fontsize{12}{12}\textbf{PAGE NO. } \\ \hline
+
+\multicolumn{2}{|p{1in}|}{01 } & Introduction  & 1  \\ \hline 
+  & 1.1  & Overview  & 1  \\ \hline  
+  & 1.2 & Motivation & 1\\ \hline
+  & 1.3 & Problem Definition and Objectives & 2\\ \hline
+  & 1.4 & Project Scope and Limitations & 3\\ \hline
+  & 1.5 & Methodologies of Problem Solving & 4\\ \hline
+  
+\multicolumn{2}{|p{1in}|}{02 } & Literature Survey  & 6  \\ \hline 
+  & 2.1  & Make-A-Video  & 6  \\ \hline 
+  & 2.2  & Invideo.ai    & 7  \\ \hline
+  
+\multicolumn{2}{|p{1in}|}{03 } & Software Requirements Specification  & 9  \\ \hline 
+  & 3.1  & Introduction  & 9  \\ \hline
+  & 3.1.1 & Project Scope & 9 \\ \hline
+  & 3.1.2 & User Classes and Characteristics & 9 \\ \hline
+  & 3.1.3 & Assumptions and Dependencies & 10 \\ \hline
+  & 3.2 & Functional Requirements & 11 \\ \hline
+  & 3.2.1 & System Feature 1 : Text Summarization & 11 \\ \hline
+  & 3.2.2 & System Feature 2 : Keyword Extraction & 12 \\ \hline
+  & 3.2.3 & System Feature 3 : Image Captioning & 12 \\ \hline
+  & 3.2.4 & System Feature 4 : Database Generation & 12 \\ \hline
+  & 3.2.5 & System Feature 5 : Image Retrieval & 12 \\ \hline
+  & 3.2.6 & System Feature 6 : Video Stitching & 12 \\ \hline
+  & 3.3 & External Interface Requirements & 13 \\ \hline
+  & 3.3.1 & User Interfaces & 13 \\ \hline
+  & 3.3.2 & Hardware Interfaces & 13 \\ \hline
+  & 3.3.3 & Software Interfaces & 13 \\ \hline
+  & 3.3.4 & Communication Interfaces & 13 \\ \hline
+  & 3.4 & Non-functional Requirements & 13 \\ \hline
+  & 3.4.1 & Performance Requirements & 13 \\ \hline
+  
+\end{tabular}
+\pagebreak{}
+  
+\begin{tabular}{|p{0.35in}|p{0.4in}|p{3.3in}|p{0.8in}|} \hline 
+\multicolumn{2}{|p{1in}|} {\fontsize{12}{12} \textbf{CHAPTER}} & \fontsize{12}{12}\textbf{TITLE}  & \fontsize{12}{12}\textbf{PAGE NO. } \\ \hline 
+  & 3.4.2 & Safety Requirements & 14 \\ \hline
+  & 3.4.3 & Security Requirements & 14 \\ \hline
+  & 3.4.4 & Software Quality Attributes  & 14 \\ \hline
+  & 3.5 & System Requirements & 15 \\ \hline
+  & 3.5.1 & Database Requirements & 15 \\ \hline
+  & 3.5.2 & Software Requirements & 15 \\ \hline
+  & 3.5.3 & Hardware Requirements & 16 \\ \hline
+  & 3.6 & Analysis Models: SDLC Model to be applied & 17 \\ \hline
+  & 3.6.1 & Agile Developement & 17 \\ \hline
+  & 3.6.2 & Phases & 17 \\ \hline
+  & 3.6.3 & Advantages & 18 \\ \hline
+  
+\multicolumn{2}{|p{1in}|}{04 } & System Design  & 19  \\ \hline 
+  & 4.1  & System architecture and Module Description  & 19  \\ \hline 
+  & 4.2  & UML Diagrams  & 21  \\ \hline 
+  & 4.2.1  & Use Case Diagram  & 21  \\ \hline
+  & 4.2.2  & Deployment Diagram  & 23  \\ \hline 
+  
+\multicolumn{2}{|p{1in}|}{05 } & Project Plan & 26  \\ \hline 
+    & 5.1  & Project Estimates  & 26  \\ \hline
+    & 5.1.1  & Reconciled Estimates  & 26  \\ \hline
+    & 5.1.2  & Project Resources  & 27  \\ \hline
+    & 5.2  & Risk Management  & 29  \\ \hline
+    & 5.2.1  & Risk Identification  & 29  \\ \hline
+    & 5.2.2  & Risk Analysis  & 30  \\ \hline
+    & 5.2.3  & Overview of Risk Mitigation, Monitoring, Management  & 30  \\ \hline
+    & 5.3  & Project Schedule & 31  \\ \hline
+    & 5.3.1  & Project Rask Set & 31  \\ \hline
+    & 5.3.2  & Task Network & 32  \\ \hline
+    & 5.3.3  & Timeline Chart & 32  \\ \hline
+    & 5.4  & Team Organization & 35  \\ \hline
+    & 5.4.1  & Team Structure & 35  \\ \hline
+
+\multicolumn{2}{|p{1in}|}{06 } & Project Implementation & 36  \\ \hline
+    & 6.1  & Overview of Project Modules  & 36  \\ \hline
+    & 6.2  & Tools and Technologies used  & 37  \\ \hline
+
+
+\end{tabular}
+\pagebreak{} 
+
+
+
+
+\begin{tabular}{|p{0.35in}|p{0.4in}|p{3.3in}|p{0.8in}|} \hline 
+\multicolumn{2}{|p{1in}|} {\fontsize{12}{12} \textbf{CHAPTER}} & \fontsize{12}{12}\textbf{TITLE}  & \fontsize{12}{12}\textbf{PAGE NO. } \\ \hline 
+
+\multicolumn{2}{|p{1in}|}{07 } & Software Testing & 39  \\ \hline 
+    & 7.1  & Types of Testing  & 39  \\ \hline
+    & 7.2  & Test Cases and Results  & 39  \\ \hline
+
+\multicolumn{2}{|p{1in}|}{08 } & Results & 41  \\ \hline 
+    & 8.1  & Outcomes  & 41  \\ \hline
+    & 8.1.1  & User Interface Outcomes  & 41  \\ \hline
+    & 8.1.2  & Video and Audio Processing  & 41  \\ \hline
+    & 8.1.3  & Cost and Efficiency  & 41  \\ \hline
+    & 8.1.4  & Image Handling and Customization  & 42  \\ \hline
+    & 8.1.5  & Overall Impact  & 42  \\ \hline
+    & 8.2  & Screenshots  & 42  \\ \hline
+
+
+\multicolumn{2}{|p{1in}|}{09 } & Conclusions  & 47  \\ \hline
+    & 9.1  & Conclusions  & 47  \\ \hline
+    & 9.2  & Future Works  & 48  \\ \hline
+    & 9.3  & Applications  & 49  \\ \hline
+    &  &  Appendix A: Problem statement feasibility assessment & 51 \\ \hline  
+    &  &  Appendix B: Details of paper publication & 53 \\ \hline 
+    &  &  Appendix C: Plagiarism Report of project report & 54 \\ \hline 
+    &  &  References & 57 \\ \hline
+    
+    
+   
+\end{tabular}
+\end{center}
+
+\pagebreak{}
+
+\begin{center} \fontsize{14}{14}\textbf{LIST OF ABBREVIATIONS} 
+
+\noindent \textbf{ }
+
+\begin{tabular}{|p{1.3in}|p{3.0in}|p{0.8in}|} \hline
+\fontsize{12}{12}\textbf{ABBREVIATION } & \fontsize{12}{12}\textbf{FULL FORM } & \fontsize{12}{12}\textbf{PAGE NO. } \\ \hline
+PIB  & Press Information Bureau & 1  \\ \hline
+NLP & Natural Language Processing & 1 \\ \hline
+API & Application Programming Interface & 3 \\ \hline
+UI & User Interface & 5 \\ \hline
+AI & Artificial Intelligence & 9 \\ \hline
+UAT & User Acceptance Testing & 11 \\ \hline
+SQL & Structured Query Language  &  12 \\ \hline
+NLTK & Natural Language Toolkit & 15 \\ \hline
+RDBMS & Relational database management system & 15 \\ \hline
+SDLC & Software Development Life Cycle  & 14 \\ \hline
+BERT & Bidirectional Encoder Representations from Transformers & 23 \\ \hline
+GPT & Generative Pre-training Transformer & 26 \\ \hline
+LLAMA & Large Language Model Meta AI & 26 \\ \hline
+CSV & Comma Separated Values & 27 \\ \hline
+CNN & Convolutional Neural Network & 27 \\ \hline
+T5 model & Text-To-Text Transfer Transformer model & 27 \\ \hline
+TTS Technology & Text-to-Speech Technology  &  27 \\ \hline
+OpenCV & Open Source Computer Vision  & 28 \\ \hline
+GAN & Generative Adversial Network  & 48 \\ \hline
+
+\end{tabular}
+ \end{center}
+
+ \pagebreak{}
+
+\begin{center}  \fontsize{14}{14}\textbf{LIST OF FIGURES} 
+
+\noindent \textbf{ }
+
+\begin{tabular}{|p{1.3in}|p{3.0in}|p{0.8in}|} \hline
+\fontsize{12}{12}\textbf{FIGURE NUMBER } & \fontsize{12}{12}\textbf{NAME OF THE FIGURE } & \fontsize{12}{12}\textbf{PAGE NO. } \\ \hline
+4.1  &  Architecture Diagram & 19  \\ \hline
+4.2.1 & Use-case Diagram & 23 \\ \hline
+4.2.2 & Deployment Diagram & 25 \\ \hline
+5.3.2 & Task Network & 32 \\ \hline
+8.2 & Screenshots & 42 \\ \hline
+
+\end{tabular}
+ \end{center}
+
+
+\pagebreak
+
+\begin{center}  \fontsize{14}{14}\textbf{LIST OF TABLES} 
+
+\noindent \textbf{ }
+
+\begin{tabular}{|p{1.3in}|p{3.0in}|p{0.8in}|} \hline
+\fontsize{12}{12}\textbf{TABLE } & \fontsize{12}{12}\textbf{ILLUSTRATION } & \fontsize{12}{12}\textbf{PAGE NO. } \\ \hline
+5.3.3 & Semester 1 Project Timeline & 33 \\ \hline
+5.3.3 & Semester 2 Project Timeline & 34 \\ \hline
+5.4.1 & Team Structure & 35 \\ \hline
+
+\end{tabular}
+ \end{center}
+
+
+\pagebreak
+
+\begin{center} \fontsize{14}{14}\textbf {CHAPTER 01: INTRODUCTION } \end{center}
+
+
+\noindent \fontsize{12}{12}\textbf{1.1 OVERVIEW}
+\pagenumbering{arabic}
+\justify      
+\hspace{5mm} 
+This project aims to address the changing landscape of information consumption by transforming text-based press releases from the Press Information Bureau (PIB) into engaging video content. It utilizes Natural Language Processing (NLP) techniques for text summarization and keyword extraction to automatically generate video summaries and identify relevant images and clips. The software includes a database of copyright-free images and clips, processed through image processing and video stitching to create visually appealing videos.\\
+
+Before publication, the videos undergo vetting by designated PIB officers for accuracy and compliance. Upon approval, the system automatically disseminates the videos across designated social media platforms, enhancing the reach and impact of PIB's communications. This project responds to the growing demand for easily consumable and visually appealing content by catering to modern audience preferences. By automating the video creation and dissemination process, it improves efficiency and scalability in information dissemination efforts. Ultimately, the project aims to enhance PIB's communication strategies and ensure that their messages reach a wider audience in a more impactful manner.
+
+\bigskip
+\bigskip
+
+\noindent \fontsize{12}{12}\textbf{1.2 MOTIVATION}
+%\pagenumbering{arabic}
+\justify      
+\hspace{5mm} In today's fast-paced and ever-evolving world, the way we consume information has drastically changed. People are inundated with vast amounts of data every day, and attention spans are dwindling. This project is motivated by the recognition that traditional methods of presenting information, especially government press releases, may not effectively capture the attention of the modern audience. There is a pressing need to adapt to this changing landscape, ensuring that important information from the Press Information Bureau (PIB) reaches the public in a way that is not only informative but also engaging.\\
+
+The motivation behind developing this comprehensive software solution lies in the belief that the power of technology can be harnessed to bridge the gap between the conventional and the contemporary. By seamlessly translating text-based press releases into visually captivating video content, the project aims to make government communication more accessible and appealing. This endeavor recognizes the importance of meeting the audience where they are – in the realm of dynamic multimedia content that holds the potential to resonate with diverse demographics.
+   
+\bigskip
+\bigskip
+\noindent  
+
+\noindent  
+
+
+\noindent \fontsize{12}{12} \textbf{1.3 PROBLEM DEFINITION AND OBJECTIVES}
+\justify
+\hspace{5mm} The current Press Releases disseminated by the Press Information Bureau (PIB) are predominantly presented in a text-based format. However, the evolving media landscape and diminishing user attention spans demand a more engaging and effective approach to information dissemination. To address this challenge, the primary objective is to develop specialized software capable of automatically converting the existing Press Releases into compelling video content.\\
+
+This software should possess the ability to seamlessly transform textual content into video format, enhancing the engagement and accessibility of the information. It should use images and clips from a pool of copyright-free images, clips, and videos.\\
+
+A crucial feature of the software should be the establishment of a media repository, which stores a diverse pool of images and video clips for potential use in video creation. Before publication, the generated video content should undergo a thorough vetting process by designated PIB officers to maintain accuracy and appropriateness.
+\\
+To streamline the approval process, the software must include a notification system that promptly informs the relevant PIB officer when a video is ready for review and approval. Finally, upon approval, the software should be equipped with the capability to automatically upload the generated video content to specified social media platforms, ensuring efficient and widespread dissemination of PIB's information and updates.\\
+
+In essence, the challenge at hand is to design a comprehensive software solution that not only automates the conversion of Press Releases into engaging videos but also guarantees adherence to copyright and authenticity standards, facilitates an efficient approval workflow, and integrates seamlessly with social media for effective communication.
+
+
+\noindent  
+\pagebreak
+
+
+\noindent \fontsize{12}{12} \textbf{1.4 PROJECT SCOPE AND LIMITATIONS}
+\justify
+\hspace{5mm} The project aims to develop an automated software solution to convert text-based Press Releases from the Press Information Bureau (PIB) into engaging video formats, utilizing Natural Language Processing (NLP) techniques for text summarization and keyword extraction. The software will leverage copyright-free images and clips to create visually appealing videos, addressing the challenge of holding user attention in the face of shrinking attention spans. By transforming the way information is conveyed, the project seeks to foster more meaningful engagement with users and enhance the effectiveness of PIB's communication strategies.\\
+
+
+However, several limitations need to be considered. The voiceover generated by the DeepGram API struggles with non-English words, potentially affecting the quality of the audio in the videos. Similarly, subtitling may also encounter difficulties with non-English words, which could impact the accessibility of the content. Additionally, while having a database of proprietary images would be beneficial, infrastructure costs may limit the usage of more advanced and resource-intensive models for text summarization, keyword extraction, and video generation. Despite these limitations, the project aims to utilize available resources effectively and explore alternative solutions to deliver engaging video content from Press Releases.\\
+
+
+In addition to the limitations mentioned, another challenge is the availability and quality of copyright-free images and clips. While utilizing these resources is cost-effective, there may be limitations in finding relevant and high-quality visual content to enhance the videos. Moreover, the use of proprietary models, although potentially providing better results, may also pose challenges in terms of integration, scalability, and cost. Balancing these factors will be crucial in ensuring the success and sustainability of the automated software solution. Despite these challenges, the project aims to leverage available technologies and resources effectively to create engaging video content from Press Releases, ultimately improving the dissemination of information and enhancing user engagement with PIB's communications.
+
+
+\noindent  
+\pagebreak
+
+
+\noindent \fontsize{12}{12} \textbf{1.5 METHODOLOGIES OF PROBLEM SOLVING}
+\justify
+\hspace{5mm} \textbf{Text Summarization}: This module is crucial for condensing lengthy press releases into concise and informative summaries, forming the basis for video scripts. It involves implementing text summarization algorithms, possibly based on transformer models, to generate shorter yet comprehensive representations of press release content. These summaries will help in creating engaging video content by providing a clear and concise narrative.\\
+
+\textbf{Keyword Extraction}: This module complements text summarization by identifying key terms and phrases that capture the essence of the press releases. These keywords are essential for content organization and matching with appropriate visual content. The software will automatically extract relevant keywords from press releases, aiding in the selection of images and clips for video creation.\\
+
+\textbf{Database Generation}: This module involves building a database of copyright-free images, clips, and videos. This database serves as a foundational step for the project, providing a source for visuals used in video generation. The software will have access to a diverse and well-organized media repository, ensuring that content creators have a wide range of visuals to choose from when generating press release videos.\\
+
+\textbf{Image Captioning}: Image captioning is crucial for generating textual descriptions of images and clips used in the video content. This ensures that the video remains informative even without audio narration. The software will provide meaningful captions for images and clips, enhancing the overall engagement and accessibility of the press release videos.\\
+
+\textbf{Voiceover Generation}: For voiceover generation, the project utilizes the Deepgram API. However, it is noted that the Deepgram API struggles with non-English words, which may impact the quality of the audio in the videos. Despite this limitation, the API provides a valuable resource for generating voiceovers, adding an auditory dimension to the press release videos.\\
+
+\textbf{Subtitling and Video Stitching}: Subtitling and video stitching are performed using the MoviePy library. This library is instrumental in seamlessly combining text, images, clips, captions, and voiceovers to create cohesive and engaging video presentations of the press releases. MoviePy's functionality allows for the creation of high-quality videos that effectively convey the information from the press releases.\\
+
+\textbf{UI: Website Development}: The user interface (UI) for the project is developed using the Streamlit platform. Streamlit provides an intuitive and interactive way to showcase press release videos and other project features. The website allows users to easily access and view the videos generated from the press releases, enhancing the overall user experience and accessibility of the project.
+
+
+\noindent  
+\pagebreak
+
+\begin{center} \fontsize{14}{14} \textbf{CHAPTER 2: LITERATURE SURVEY } \end{center}
+
+\noindent \fontsize{12}{12}\textbf{2.1 MAKE-A-VIDEO}
+\justify
+\hspace{5mm}Make-A-Video research builds on the recent progress made in text-to-image generation technology built to enable text-to-video generation. The system uses images with descriptions to learn what the world looks like and how it is often described. It also uses unlabeled videos to learn how the world moves. With this data, Make-A-Video lets you bring your imagination to life by generating whimsical, one-of-a-kind videos with just a few words or lines of text.
+
+\justify
+Pros of Meta's Make-A-Video AI System:
+
+\begin{enumerate}
+\item Efficiency:
+\begin{itemize}
+\item Make-A-Video can generate videos quickly, which could save time and money for businesses and individuals. This is especially important for press releases, which often need to be published quickly.
+\end{itemize}
+
+\item Engagement:
+\begin{itemize}
+\item  Videos are often more engaging than text, so using Make-A-Video to generate videos from press releases could help to increase engagement with the content. This could lead to more website visits, social media shares, and sales.
+
+\end{itemize}
+
+\item Accessibility: 
+\begin{itemize}
+\item Make-A-Video could make video creation more accessible to people with limited skills or resources. This means that businesses of all sizes could create engaging and informative videos to promote their products or services.
+
+\end{itemize}
+
+\item Creativity: 
+\begin{itemize}
+\item Make-A-Video can be used to create videos that are visually appealing and attention-grabbing. This could help press releases to stand out from the crowd and get more coverage.
+
+\end{itemize}
+
+\end{enumerate}
+\pagebreak{}
+\justify
+Cons of Meta's Make-A-Video AI System:
+
+\begin{enumerate}
+\item Accuracy: 
+\begin{itemize}
+\item Make-A-Video is still under development, so there is a risk that it could generate videos that are inaccurate or misleading. This is especially important for press releases, which need to be factual and accurate.
+\end{itemize}
+
+\item Bias: 
+\begin{itemize}
+\item  Make-A-Video is trained on a massive dataset of text and code, which could reflect the biases that exist in that dataset. This means that Make-A-Video could generate videos that are biased against certain groups of people or that promote harmful stereotypes.
+
+\end{itemize}
+
+\item Misuse: 
+\begin{itemize}
+\item Make-A-Video could be used to create fake or misleading videos. For example, it could be used to create videos that appear to show a company's CEO making false or misleading statements. This could have serious consequences for the company's reputation.
+
+\end{itemize}
+
+\item Privacy concerns: 
+
+\begin{itemize}
+\item Make-A-Video would need to be trained on a dataset of videos that contain personal information about people. This raises concerns about the privacy of those individuals.
+
+\end{itemize}
+
+\end{enumerate}
+\bigskip
+\bigskip
+\noindent \fontsize{12}{12} \textbf{2.2 INVIDEO.AI}
+\justify
+\hspace{5mm}It's essentially a tool that transforms your text ideas into engaging videos with all the bells and whistles—stock footage, voiceovers, music, and transitions. Perfect for content creators looking to spice up their YouTube, Instagram, or TikTok game without diving into the nitty-gritty of video production. It's like turning your thoughts into a visual masterpiece with just a few keystrokes. Talk about efficiency!
+\justify
+Pros of Invideo.ai System:
+\begin{enumerate}
+\item Access to the library having more than 1 Million videos and photos from Storyblock and Shutterstock 
+\item Simple-to-use interface developed for non-techies 
+\item Create videos in any language 
+\item Pre-made templates developed for platform, purpose, and placement 
+\item Automated text-to-speech 
+\item 24/7 world-class support 
+\item Free Access to Facebook Community of InVideo.io for support 
+\item Complete control over the appearance of your project 
+\item Ability to upload your own media 
+
+\end{enumerate}
+\justify
+Cons of Invideo.ai System:
+\begin{enumerate}
+\item Cannot switch between templates
+\item The Exporting process is lengthy and time-consuming
+\item Limited features and tools in the free version
+\item Limited music library 
+\item Difficult for precise editing
+\item Unethical and unprofessional behavior
+\item No AI included
+
+\end{enumerate}
+
+\pagebreak{}
+
+
+\begin{center} \fontsize{14pt}{14pt} \textbf{CHAPTER 3: SOFTWARE REQUIREMENTS
+SPECIFICATIONS } \end{center}
+
+
+\justify \fontsize{12}{12} \textbf{3.1 INTRODUCTION:}
+
+\justify 3.1.1 Project Scope: \\
+
+\indent {This project aims to develop software for the Press Information Bureau (PIB)
+to automatically convert text-based Press Releases into engaging videos. Using a 
+repository of copyright-free visuals, the software will enhance content visually. It 
+includes a vetting process by PIB officers and a notification system for efficient 
+approval. The software will also automatically upload approved videos to specified 
+social media platforms, adapting to the changing communication landscape. Advanced AI 
+and NLP capabilities will improve content summarization. Users can customize video 
+elements for creative flexibility. Continuous monitoring and maintenance will keep the 
+media repository updated. The project addresses the challenge of information 
+dissemination while providing a solution aligned with evolving communication trends 
+and user expectations.}
+\justify
+
+3.1.2 User Classes and Characteristics:
+\medskip
+\begin{enumerate}
+\item Content Creators:
+\begin{itemize}
+\item Content creators within the Press Information Bureau (PIB) are responsible for transforming press releases into engaging video content.
+\item Proficient in using the Frontend Website for inputting press releases, customizing video settings, and accessing the media repository.
+\item Require a user-friendly interface and tools for efficient video creation.
+\end{itemize}
+\item PIB Officers: 
+\begin{itemize}
+\item PIB officers designated for the vetting and approval process of generated video content.
+\item Have a keen eye for accuracy and appropriateness in video representations of press releases.
+\item Receive notifications for video review and approval through the system, requiring timely and effective communication features.
+\end{itemize}
+\item System Administrators:
+\begin{itemize}
+\item Technical experts responsible for system maintenance, monitoring, and ensuring smooth operations.
+\item Proficient in managing backend components, addressing technical issues, and implementing updates.
+\item Require access to system logs and monitoring tools for proactive maintenance.
+\end{itemize}
+\item End Users (Public Audience): 
+\begin{itemize}
+\item Individuals from the public audience who consume press release information disseminated through social media platforms.
+\item Seek informative and engaging video content that effectively communicates the essence of press releases.
+\item Do not directly interact with the system but are impacted by the quality and accessibility of the generated videos.
+\end{itemize}
+\item IT Support Team:
+\begin{itemize}
+\item Provide technical support and assistance to content creators and system administrators.
+\item Proficient in troubleshooting user issues, assisting with software usage and ensuring smooth user experiences.
+\item Require access to comprehensive documentation for efficient problem resolution.
+\end{itemize}
+\item System Developers:
+\begin{itemize}
+\item The development team is responsible for building and enhancing the software system.
+\item Proficient in programming languages, deep learning frameworks, and software development tools.
+\item Collaborate with stakeholders to understand user needs and iteratively improve system functionalities.
+\end{itemize}
+\end{enumerate}
+
+\justify
+3.1.3 Assumptions and Dependencies:\\
+
+\textbf{Assumptions:}
+\begin{itemize}
+\item Internet Connectivity: The system assumes continuous internet connectivity for functionalities such as accessing and updating the media repository, as well as notifying designated officers during the approval process.
+\item Data Integrity: It is assumed that the press release data provided for testing is accurate and representative of the actual data that the system will process in a live environment.
+\item Legal Compliance: The project assumes adherence to copyright laws and regulations concerning the use of images, clips, and videos in the media repository. It is assumed that the provided content is copyright-free or appropriately licensed for use.
+\end{itemize}
+
+\textbf{Dependencies:}
+\begin{itemize}
+\item Integration with External Libraries:
+Successful integration with external libraries and frameworks for natural language processing, deep learning, and multimedia processing is a dependency. Compatibility with these libraries is crucial for the effective functioning of the system.
+\item User Acceptance Testing (UAT):
+The project is dependent on the active participation of PIB officers and other stakeholders in the User Acceptance Testing (UAT) phase. The timely completion of UAT is essential for finalizing the system for deployment.
+\item Access to Cloud Services:
+The project depends on uninterrupted access to cloud services for hosting the software and managing the media repository. Any disruptions in cloud services may impact the system's functionality.
+\item Regulatory Approvals:
+Regulatory approvals related to data privacy, security, and compliance with relevant laws are dependencies. The project assumes that necessary approvals are obtained in a timely manner.
+\end{itemize}
+
+\bigskip
+
+\justify \fontsize{12}{12}\textbf{3.2 FUNCTIONAL REQUIREMENTS:}
+
+\justify
+3.2.1 System Feature 1: Text Summarization
+
+\begin{enumerate}
+\def\labelenumi{\arabic{enumi}.}
+\item
+  Text summarization is a crucial component of the project as it
+  involves condensing lengthy press releases into concise and informative summaries. 
+  This summarization will serve as the basis for creating video scripts.
+
+\item
+  Implementing text summarization algorithms, possibly based on transformer models, will result in shorter yet comprehensive representations of press release content.
+\end{enumerate}
+\pagebreak{}
+
+\justify
+3.2.2 System Feature 2: Keyword Extraction
+
+\begin{enumerate}
+\def\labelenumi{\arabic{enumi}.}
+\item
+  Keyword extraction complements text summarization by identifying key terms and phrases that capture the essence of the press releases. These keywords can be used for content organization and image and clip matching.
+\item
+  The software will automatically extract relevant keywords from press releases, aiding in the selection of appropriate visual content for video creation.
+\end{enumerate}
+
+\justify
+3.2.3 System Feature 3: Image Captioning
+\begin{enumerate}
+\def\labelenumi{\arabic{enumi}.}
+\item
+  Image captioning is essential for generating textual descriptions of images and clips that will be used in Image Retrieval. This ensures that custom images are able to be retrieved from the database.
+\item
+  The software will provide meaningful captions for images and clips, contributing to the overall enhancement of the ability to retrieve images from database.
+\end{enumerate}
+
+\justify
+3.2.4 System Feature 4: Database Generation
+
+\begin{enumerate}
+\def\labelenumi{\arabic{enumi}.}
+\item
+  Building a database of copyright-free images, clips, and videos is a foundational step in the project. This database will serve as a source for visuals used in the video generation process.
+\item
+  The software will have access to a diverse and well-organized media repository through either API calls to License-free image repositories, or our own SQL database, that content creators can use when generating press release videos.
+\end{enumerate}
+
+\justify
+3.2.5 System Feature 5: Image Retrieval
+
+\begin{enumerate}
+\def\labelenumi{\arabic{enumi}.}
+\item
+  Image Retrieval aims at retrieving images with relevant tags from a SQL database where images are stored in the form of tags as their filename.
+\item
+  The software will seamlessly allow, custom images to be retrieved and be used in the video stitching process.
+\end{enumerate}
+
+3.2.6 System Feature 6: Video Stitching
+
+\begin{enumerate}
+\def\labelenumi{\arabic{enumi}.}
+\item
+  Video stitching involves combining text, images, clips, captions, and AI voiceovers to create cohesive and engaging video presentations of the press releases.
+\item
+  The software will seamlessly stitch together these elements to produce high-quality videos that effectively convey the press release information.
+\end{enumerate}
+\pagebreak{}
+
+\bigskip
+\justify\fontsize{12}{12}\textbf{3.3 EXTERNAL INTERFACE REQUIREMENTS:}
+
+\justify
+3.3.1 User Interfaces:\\
+\smallskip
+\hspace{5mm}The system will feature a user-friendly front-end website as the primary user 
+interface. Content creators will interact with this interface to input press releases,
+customize video settings, and access the media repository. The website will be 
+designed with intuitiveness in mind, ensuring a seamless experience for users.
+
+\justify
+3.3.2 Hardware Interfaces:\\
+\smallskip
+\hspace{5mm}
+The software is designed to be compatible with standard computing hardware. It 
+requires a device with sufficient processing power and memory to handle the 
+computational demands of deep learning models, image processing, and video rendering. 
+Specific hardware specifications will be detailed in the system requirements 
+ documentation.
+
+\justify
+3.3.3 Software Interfaces:\\
+\smallskip
+\hspace{5mm}
+The system will integrate with various software components to ensure smooth operation.
+This includes compatibility with deep learning frameworks for image analysis, natural 
+language processing libraries for text summarization and keyword extraction, and 
+multimedia processing tools for video stitching and image captioning. Detailed 
+specifications and versions of these software interfaces will be outlined in the 
+system documentation.
+
+\justify
+3.3.4 Communication Interfaces:\\
+\smallskip
+\hspace{5mm}
+The software will require internet connectivity for certain functionalities, such as 
+accessing and updating the media repository and notifying designated PIB officers 
+during the approval process. It will utilize standard communication protocols for 
+secure data transmission and efficient interaction with external servers. Specific 
+protocols and security measures will be detailed in the system documentation.
+\bigskip
+
+\justify \fontsize{12}{12}\textbf{3.4 NON-FUNCTIONAL REQUIREMENTS:}
+
+\justify
+3.4.1 Performance Requirements:
+
+\begin{enumerate}
+\def\labelenumi{\arabic{enumi}.}
+\item 
+    Response Time: The system should exhibit low latency in processing press releases and generating corresponding videos, aiming for a response time of 150 seconds.
+\item 
+    Scalability: The software should scale efficiently to handle an increasing volume of press releases, ensuring consistent performance under varying workloads.
+\item 
+    Throughput: The system should support a minimum throughput of 25 press releases per hour for video generation and dissemination.
+\end{enumerate}
+
+\justify
+3.4.2 Safety Requirements:
+
+\begin{enumerate}
+\def\labelenumi{\arabic{enumi}.}
+\item
+    Data Integrity: The software must ensure the integrity of data throughout the press release processing pipeline, minimizing the risk of data corruption.
+\item
+    Error Handling: Robust error handling mechanisms should be in place to identify, log, and recover from errors without compromising the overall system integrity.
+\end{enumerate}
+
+\justify
+3.4.3 Security Requirements:
+
+\begin{enumerate}
+\def\labelenumi{\arabic{enumi}.}
+\item
+    Data Privacy: The system should adhere to data privacy regulations, ensuring the confidentiality and protection of sensitive information within press releases.
+\item 
+    User Authentication: Access to the Frontend Website and other critical system components should be secured with robust user authentication mechanisms to prevent unauthorized access.
+\end{enumerate}
+
+\justify
+3.4.4 Software Quality Attributes:
+\begin{enumerate}
+\def\labelenumi{\arabic{enumi}.}
+\item Reliability: The software should be reliable, minimizing the likelihood of system failures or crashes during press release processing and video generation.
+\item Usability: The Frontend Website should be designed with a user-friendly interface, ensuring content creators can easily navigate and utilize the software's functionalities.
+\item Maintainability: The software should be designed and documented in a way that facilitates ease of maintenance, updates, and future enhancements.
+\item Portability: The system should be deployable on various computing environments, promoting portability across different platforms.
+    
+\end{enumerate}
+\pagebreak{}
+\justify \fontsize{12}{12} \textbf{3.5 SYSTEM REQUIREMENTS:}
+\justify
+
+3.5.1 Database Requirements:
+
+The system should utilize a reliable and scalable database solution,
+such as \linebreak MySQL, for storing images and their tags in the form of key-value pair.
+
+\justify
+3.5.2 Software Requirements:
+
+\begin{enumerate}
+\def\labelenumi{\arabic{enumi}.}
+\item
+  \textbf{Operating System}: 
+    \begin{enumerate}
+        \item Linux or Unix-based system for stability and performance (e.g., Ubuntu 22.04 LTS).
+        \item Windows 10 or above
+        \item macOS 11 Big Sur or above
+    \end{enumerate}
+\item
+  \textbf{Development Environment}: 
+    \begin{enumerate}
+        \item Python (Version 3.11) for implementing NLP techniques and overall system development.
+        \item Development frameworks/libraries for NLP (NLTK) and machine learning (PyTorch).
+    \end{enumerate}
+\item 
+    \textbf{Language Model}: Large Language Model Llama-2-70b-chat-hf by Meta for text summarization. gpt-3.5-turbo for Keyword extraction.
+\item
+  \textbf{Database Management System}: 
+        \begin{enumerate}
+            \item A relational database management system (RDBMS) for structured data such as image/video metadata and tags, preferably MySQL.
+            \item An object storage system for unstructured data like videos and images.
+        \end{enumerate}
+\item
+  \textbf{Cloud Services}: Integration with cloud platforms (preferably Google Cloud Platform) for scalability, storage, and efficient data processing.
+\item
+  \textbf{Multimedia Processing Tools}:
+    \begin{enumerate}
+        \item Video Editing tool FFMPEG for facilitating video editing abilities such as stitching, adding transition effects.
+        \item Python Library MoviePy which utilises FFMPEG's capabilites for conducting video editing and adding captions to the video.
+        \item Deepgram API for AI voice generation and subtitling of the generated voice.
+    \end{enumerate}
+\item
+  \textbf{Web Development Framework}: For developing a user-friendly interface for PIB officers to vet and approve video content.
+    \begin{enumerate}
+        \item Frontend: Streamlit
+            \begin{enumerate}
+                \item Efficient for dynamic UI components.
+                \item Ideal for creating modern and responsive user interfaces.
+            \end{enumerate}
+        \item Backend: Python Streamlit
+            \begin{enumerate}
+                \item Seamless integration of UI and python modules.
+                \item Built-in features of Python to integrate the modules together and load the models and the API calls.
+            \end{enumerate}
+    \end{enumerate}
+\item
+  \textbf{Git:} Version control system, necessary for collaborative
+  software development and source code management.
+\end{enumerate}
+
+\justify
+3.5.3 Hardware Requirements:
+
+\begin{enumerate}
+    \item 
+        \textbf{Processing Power}: 
+            \begin{enumerate}
+                \item Multi-core processors (at least quad-core) for efficient parallel processing during NLP and multimedia tasks.
+                \item Ample RAM (8GB or more) to handle the computational load, especially during image and video processing.
+            \end{enumerate}
+    \item 
+        \textbf{Graphics Processing Unit (GPU)}:
+            \begin{enumerate}
+                \item A dedicated GPU can significantly accelerate image processing tasks and video rendering.
+                \item NVIDIA T4: 
+                \begin{enumerate}
+                    \item GPU memory: 16 GB or more
+                    \item Number of GPUs: 1 or more
+                \end{enumerate}
+            \end{enumerate}
+    \item 
+        \textbf{Storage}: High-capacity, fast storage (SSD) for quick access to the database and multimedia content.
+    \item 
+        \textbf{Internet Connection}: A reliable and high-speed internet connection, especially for cloud-based operations and social media dissemination.
+            \begin{enumerate}
+                \item Upload Speed: Minimum of 5 Mbps for smooth data uploads.
+                \item Download Speed: At least 10 Mbps for efficient access to cloud services and content.
+                \item Latency: Target latency below 50 milliseconds for responsive interactions.
+            \end{enumerate}
+\end{enumerate}
+\bigskip
+\justify \fontsize{12}{12}\textbf{3.6 ANALYSIS MODELS: SDLC MODEL TO BE
+APPLIED:}
+
+\justify
+3.6.1 Agile Developement:
+
+\begin{itemize}
+\item Iterative Development: The Agile model will be applied, emphasizing iterative development cycles. Each iteration focuses on delivering a set of prioritized features, allowing for flexibility in responding to changing requirements.
+\item Collaborative Approach: The development process will involve close collaboration between the development team, PIB officers, and other stakeholders. Regular feedback sessions and demonstrations will ensure alignment with project goals.
+\item Adaptability: The Agile model enables adaptability to evolving project requirements. Changes can be incorporated at the end of each iteration, accommodating feedback and ensuring the delivered software aligns with user expectations.
+\item Incremental Releases: The project will follow an incremental release strategy, with each iteration delivering a functional increment of the software. This allows for early testing, user feedback, and continuous improvement.
+\item Continuous Integration: Continuous Integration practices will be employed to ensure that changes from multiple developers are integrated regularly. This reduces integration issues and provides a more stable code base throughout the development process.
+\item User Involvement: Users, especially PIB officers, will be actively involved throughout the development process. Regular review sessions and feedback loops will ensure that the software meets user expectations and effectively addresses their needs.
+\end{itemize}
+
+\justify
+3.6.2 Phases:
+\begin{enumerate}
+\item Planning: Define project goals, and scope, and prioritize features for each iteration. Develop a backlog of features and establish release plans.
+\item Iterative Development: Conduct iterative development cycles, focusing on delivering prioritized features. Each iteration includes planning, development, testing, and demonstration phases.
+\item Review and Feedback: Regularly review progress with stakeholders, especially PIB officers. Gather feedback, make necessary adjustments, and plan for the next iteration.
+\item Testing: Conduct comprehensive testing during and at the end of each iteration to ensure the quality and functionality of the delivered software.
+\item Deployment: Incremental releases will be deployed to a staging environment for user acceptance testing. Once approved, the software will be deployed to the production environment.
+\end{enumerate}
+
+
+\justify
+3.6.3 Advantages:
+\begin{enumerate}
+\item Flexibility: Ability to adapt to changing requirements and priorities.
+\item Early and Continuous Delivery: Regular delivery of functional increments allows for early testing and user feedback.
+\item Collaborative Environment: Encourages collaboration between development teams and stakeholders, fostering a shared understanding of project goals.
+\item Reduced Risk: Incremental development and continuous testing help identify and address issues early in the development process.
+\end{enumerate}
+
+\pagebreak{}
+
+ \begin{center} \fontsize{14}{14} \textbf{CHAPTER 4: SYSTEM DESIGN } \end{center}
+
+\bigskip
+\justify \textbf{\fontsize{12}{12}\selectfont 4.1 SYSTEM ARCHITECTURE AND MODULE DESCRIPTION: }\\
+\noindent \justify \includegraphics[width=6.0in,height=7.59764in]{architecture_diagram.JPG}
+ \begin{center}
+     Fig 4.1 Architecture Diagram.
+ \end{center}
+
+\justify \hspace{5mm}  
+\begin{enumerate}
+\item \textbf{Text Summarization: } \\ The Text Summarization component is responsible for processing textual content from press releases. Using advanced language models or transformers like BERT, it condenses lengthy articles into concise and meaningful summaries. The generated summaries serve as the foundation for creating subtitles in the final one-minute video.
+
+\item \textbf{Keyword Extraction: } \\ The Keyword Extraction component plays a vital role in content enrichment. It extracts relevant keywords from the subject or content of press releases. These keywords are used to query a database containing images and video clips, aiding in the selection of visual assets for the generated video.
+
+\item \textbf{Monitoring: } \\ The LangChain Monitoring module in VidQuill is essential for tracking and managing the performance and costs of AI-related API calls, such as those to GPT-3.5 and Deepgram. It provides real-time analytics to pinpoint inefficiencies and ensure API usage remains cost-effective, crucial for maintaining the operational efficiency and scalability of the software.
+
+\item \textbf{Image Captioning: } \\ Image Captioning involves generating descriptive tags or captions for images added to the database. Leveraging image captioning models, this component enhances the searchability and relevance of images. The generated captions serve as metadata, facilitating efficient retrieval during the video creation process.
+
+\item \textbf{Database: } \\ The Database Generation component manages the storage and retrieval of multimedia assets such as images and video clips. It ensures a systematic organization of content, enabling quick and efficient access during the video creation process. This component is crucial for maintaining a rich and diverse database of media resources.
+
+\item \textbf{AI Voice Generation: } \\ This module processes the summarized text of news articles or press releases, converting it into spoken words that complement the visual elements of the videos. By doing so, it not only makes the content more accessible and engaging but also enriches the viewer's experience, allowing the delivery of information through both visual and auditory channels, thereby catering to diverse user preferences and enhancing comprehension.
+
+\item \textbf{Video Stitching: } \\ Video Stitching is responsible for combining the summarization, keyword-extracted images, and video clips into a cohesive one-minute video. This component orchestrates the arrangement and timing of visual and textual elements, producing an engaging and informative video representation of the press release content.
+
+\item \textbf{UI: Website: } \\ The User Interface (UI) component represents the web-based interface through which users, particularly officers, interact with the system. It provides a user-friendly platform for submitting press releases, adding images to the database, and overseeing the video creation and approval processes. The UI enhances user experience and facilitates seamless communication with the underlying system.
+
+\item \textbf{Dev-to-prod: } \\ The Dev-to-Prod component is responsible for the deployment and transition of the system from development to production environments. It manages the deployment process, ensuring that the system functions effectively in a real-world setting. This component oversees the deployment of the various software modules onto the designated hardware nodes or cloud platforms, ensuring a smooth transition from the development phase to live production use.
+
+
+\end{enumerate}
+
+\bigskip
+\bigskip
+
+\justify \textbf{4.2 UML DIAGRAMS:}
+\justify 4.2.1 Use Case Diagram:\\
+
+\textbf{Actors:}
+\begin{itemize}
+    \item \textbf{Officer:} An Officer is a primary actor who interacts with the system. They play a crucial role in submitting press releases, adding images to the database, approving videos, and participating in the overall content creation and approval process.
+\end{itemize}
+\begin{itemize}
+    \item \textbf{User:} The User is another primary actor who interacts with the system by viewing the generated videos. Users benefit from the informative and engaging content produced by the system.
+\end{itemize}
+
+\textbf{Use Cases:}
+\begin{enumerate}
+    \item \textbf{Officer Submits Press Release:} This use case represents the action where an Officer inputs a press release into the system. This press release serves as the source material for generating a video.
+    \item \textbf{Officer Adds Images to the Database:}  In this use case, an Officer has the option to enrich the system's database by adding new images. These images can be utilized in the video creation process.
+    \item \textbf{System Generates Video:} The central use case involves the system generating a video based on the submitted press release. It incorporates text summarization, keyword extraction, and multimedia content to produce a one-minute video.
+    \item \textbf{Officer Approves Video:} After the video is generated, an Officer has the responsibility to review and approve the content. This step ensures that the produced video aligns with the standards and goals of the Press Information Bureau.
+    \item \textbf{System Publishes Video to Social Media:} Once approved, the system can publish the video to various social media platforms. This use case involves the dissemination of information to a broader audience.
+    \item \textbf{User Views Video:} The final use case involves Users accessing and viewing the generated videos. This represents the intended outcome of the content creation process.
+\end{enumerate}
+
+\textbf{Relationships:}
+\begin{description}
+
+\begin{enumerate}
+\item \textbf{Officer Submits Press - Release System Generates Video:} The submission of a press release includes the automatic process of generating a video. This relationship signifies that video generation is an integral part of the press release submission.
+\item \textbf{Officer Adds Images to the Database - System Generates Video:}  While adding images to the database is an optional step, it extends the video generation process. If images are added, they contribute to the richness of the generated video.
+\item \textbf{Officer Approves Video - Video System Publishes Video to Social Media: } Video approval includes the subsequent action of publishing the video to social media platforms. This relationship ensures that approved content reaches its intended audience through social media channels.
+
+\end{enumerate}
+\end{description}
+
+
+\noindent \justify \includegraphics[width=5.8in,height=4.0in]{use_case_diagram.jpg}
+\begin{center}
+    Fig 4.2.1 Use-Case Diagram
+\end{center}
+
+\bigskip
+
+
+\justify 4.2.2 Deployment Diagram:
+\justify In this diagram,
+\begin{enumerate}
+    \item \textbf{Server 1 - Summarizer Component:} Server 1 is dedicated to hosting the Summarizer component. This crucial component employs advanced language models or transformers like BERT to efficiently summarize the text content extracted from press releases. By running on this server, the Summarizer contributes to the generation of concise and meaningful summaries, serving as the foundation for the subsequent video creation process.
+    \item \textbf{Server 2 - Keyword Extractor Component:}  The second server is designated for hosting the Keyword Extractor component. This component plays a vital role in content enrichment by extracting relevant keywords from the subject or content of press releases. These keywords are instrumental in querying the database for multimedia assets during the video creation process.
+    \item \textbf{Server 3 - Database Component:} Server 3 serves as the host for the Database component, managing the storage and retrieval of multimedia assets, such as images and video clips. This server ensures efficient organization and accessibility of content, supporting the seamless integration of visuals into the generated videos.
+    \item \textbf{Server 4 - Image Captioning Component:} The fourth server is dedicated to the Image Captioning component. This component is responsible for generating descriptive tags or captions for images stored in the database. By running on this server, Image Captioning enhances the searchability and relevance of images, contributing to a more engaging and informative video creation process.
+    \item \textbf{Server 5 - Video Stitching Component:} Server 5 hosts the Video Stitching component, which orchestrates the combination of summarized text, keyword-extracted images, and video clips into cohesive one-minute videos. By handling the arrangement and timing of visual and textual elements, this server ensures the production of engaging and coherent videos representing the press release content.
+    \item \textbf{Server 6 - Web App and Python Code Components:} The sixth server is a multifaceted component, serving as the host for both the web application and Python code components. It manages the user interface (UI) through the web app, facilitating interactions for Officers and Users. Additionally, this server handles the coordination and execution of the Python code components, overseeing the entire deployment and ensuring effective communication and integration among the various servers and components.
+\end{enumerate}
+\noindent \justify \includegraphics[width=6.2in,height=4.29764in]{deployment.jpg}
+\begin{center}
+    Fig 4.2.2 Deployment Diagram
+\end{center}
+\\
+
+\pagebreak{}
+
+\begin{center} \fontsize{14}{14} \textbf{CHAPTER 5: PROJECT PLAN } \end{center}
+
+\justify \textbf{5.1 PROJECT ESTIMATES}
+
+\justify 5.1.1 Reconciled Estimates:
+\begin{enumerate}
+\item \textbf{Text Summarization}: The project employs the LangChain-based LLM application with the LLAMA 2 Model, accessed through the Anyscale API, for text summarization. The LLAMA-2-7b-chat-hf model is utilized, with a costing structure that includes 10\$ free credits per account. Additionally, the LLAMA-2-7b-chat-hf model is priced at 0.15\$ per million tokens, equivalent to 0.00015\$ per 1K tokens. This model is chosen for its ability to efficiently condense lengthy press releases into concise and informative summaries, forming the basis for video scripts.
+
+\item \textbf{Keyword Extraction}: The project uses the GPT 3.5 Turbo model for keyword extraction. While the exact cost for this model is not specified, it is chosen for its effectiveness in identifying key terms and phrases that capture the essence of the press releases. These keywords play a crucial role in content organization and matching with appropriate visual content for video creation.
+
+\item \textbf{AI Voice Generation}: Deepgram API is utilized for AI voice generation, offering a usage limit of \$200 free credits without requiring a credit card. The API provides 12 voice options for generating voiceovers, enhancing the auditory dimension of the press release videos.
+
+\item \textbf{Media Data}: The project leverages the Pexels API for accessing media data, which is free to use. The API offers request limits of 200 per hour and 20,000 per month, providing a diverse range of copyright-free images and clips for enhancing video content.
+
+\item \textbf{Image Captioning}: Salesforce blip captioning service is employed for image captioning, although the specific cost for this service is not provided. This service generates textual descriptions of images and clips used in the video content, ensuring that the videos remain informative even without audio narration.
+
+\item \textbf{Video Stitching}: The project utilizes the Moviepy library for video stitching, which is a free and open-source library. This library seamlessly combines text, images, clips, captions, and voiceovers to create cohesive and engaging video presentations of press releases, enhancing the overall quality and impact of the videos.
+\end{enumerate}
+
+\justify 5.1.2 Project Resources:
+
+\begin{enumerate}
+
+\item \textbf{Text Dataset Generation}: The project utilized web scraping techniques to collect news articles and their titles from various media websites. This process involved parsing the HTML content of these websites using the BeautifulSoup library in Python. More than 10,000 data points were generated in this manner, encompassing both Indian and international news articles. The collected data was then stored in a CSV format for further processing and analysis.
+
+\item \textbf{Knowledge Distillation}: Knowledge distillation involves transferring knowledge from a larger, more complex model to a smaller, simpler model. In this project, the OpenAI API for GPT-3.5 was used for knowledge distillation. This API provides access to a large language model with 175 billion parameters. The API offers \$5 free credits per account and charges \$0.001 per 1,000 tokens for usage. The T5 model, a Text-To-Text Transfer Transformer model, was trained on the generated data to distill the knowledge for text summarization.
+
+\item \textbf{Text Summarization}: Two different methods were employed for text summarization in the project. The first method involved fine-tuning the T5 model on CNN testing data. This model provides abstractive summarization, which involves generating a concise and coherent summary of a text while preserving its meaning. The second method utilized the LangChain-based LLM (Large Language Model) application with the LLAMA 2 Model accessed through the Anyscale API. This model offers a cost-effective solution for text summarization, with a costing structure that includes \$10 free credits per account and a price of 0.15\$ per million tokens for the LLAMA-2-7b-chat-hf model.
+
+\textbf{Keyword Extraction}: Keyword extraction is the process of identifying and extracting important words or phrases from a text. The project used the KeyBERT model for keyword extraction, which is a lightweight and efficient model for this task. Additionally, the project aimed to explore the LLama model for keyword extraction, which could provide further insights and improve the accuracy of keyword extraction.
+
+\item \textbf{Media Dataset}: The project utilized the Pexels API to access a dataset of copyright-free images and clips. The Pexels API is free to use and offers request limits of 200 per hour and 20,000 per month. This dataset was used for enhancing the visual content of the videos generated from the press releases. Additionally, the project considered using the Unsplash API, which also provides free access to a large collection of high-quality images with a request limit of 50 per hour in App mode.
+
+\item \textbf{Image Captioning}: Image captioning is the process of generating textual descriptions for images. The project explored two options for image captioning. The first option involved using the GPT-2 model for image captioning. However, the output quality of this model was found to be meager. The second option was the Salesforce Blip Captioning service, which provided excellent outputs for image captioning.
+
+\item \textbf{Image Querying}: Image querying refers to the process of retrieving images based on a query image or a set of tags. The project explored two approaches for image querying. The first approach was content-based image retrieval, which involves comparing the visual features of images to find similar images. The project considered using the GitHub repository silknow/image-retrieval for this purpose. The second approach was tags-based image retrieval, where images are stored in a binary format and queried using SQL based on their tags. The project considered using this approach for efficient image retrieval based on specific keywords or tags.
+
+\item \textbf{Quantization}: Quantization is the process of reducing the precision of a model's weights and activations to reduce memory and computational requirements. The project considered quantization for the LLama 2 model, the Microsoft GIT model, and the OpenAI API call to optimize their performance and resource usage.
+
+\item \textbf{Video Stitching}: Video stitching is the process of combining multiple video clips or images to create a single, cohesive video. The project used the MoviePy library for video stitching, which is a free and open-source library in Python. MoviePy provides functionality for tasks such as image stitching, text writing on images, and duration handling. Additionally, OpenCV was used for managing the order of sentences in the videos, ensuring that the content flows smoothly.
+
+\item \textbf{AI Voice Generation}: AI voice generation involves converting text into speech using artificial intelligence techniques. The project explored several options for AI voice generation. The first option considered was Natural Reader, which provides the ability to read documents, texts, images, and webpages. The free version of Natural Reader allows users to sample the Premium Voices for 20 minutes per day and the Plus Voices for 5 minutes per day. Another option considered was ElevenLabs, which offers a Python API for Text-To-Speech conversion. Additionally, the project explored the OpenAI Whisper TTS (Text-to-speech) service, which offers models such as Tts-1 and Tts-1-hd for generating high-quality audio from text. The cost for these services varies, with the OpenAI Whisper TTS service charging \$0.015 per 1,000 input characters for the Tts-1 model. The project also explored the Deepgram API for AI voice generation, which provides 12 voice options for generating voiceovers.
+
+\item \textbf{Website}: For the website development, the project used Streamlit for short-term requirements. Streamlit is a Python library that allows for the creation of interactive web applications. For long-term requirements, the project planned to transition to using ReactJS for the front end and Django for the back end. ReactJS is a JavaScript library for building user interfaces, while Django is a high-level Python web framework for building web applications. The website features a text box for user input, with the ability to upload DOCX and PDF files for processing. Various PDF text extraction tools were considered for extracting text from PDF files, with PyMuPDF chosen for its readiness and availability.\\
+
+\end{enumerate}\\
+
+
+\justify \textbf{5.2 RISK MANAGEMENT}
+
+\justify 5.2.1 Risk Identification:
+\begin{enumerate}
+    \item Dependency on open-source models: The performance of the project relies heavily on the effectiveness and reliability of open-source models. Any issues or limitations in these models could impact the project's outcomes.
+
+\item 
+Perception of job replacement: There is a risk that people may perceive the software as replacing human jobs, leading to resistance or reluctance in using the software.
+\item Data privacy and security: There is a risk of data breaches or unauthorized access to sensitive information stored in the project's database.
+\item Technology limitations: The project's reliance on AI and machine learning technologies may face limitations such as computational power, scalability, or algorithmic constraints.
+
+\end{enumerate}
+\bigskip
+\bigskip
+
+\justify 5.2.2 Risk Analysis:
+\begin{enumerate}
+\item Dependency on open-source models: This risk is significant as the project's success is directly tied to the performance of these models. Any shortcomings or failures in the models could result in delays or subpar outcomes.
+\item Perception of job replacement: While this risk may not directly impact the technical aspects of the project, it could affect its adoption and acceptance among users. Addressing this perception is crucial for the software's success.
+\item Data privacy and security: A breach in data privacy and security could lead to loss of trust among users and legal consequences for the project.
+Technology limitations: Technological limitations could hinder the project's ability \item to scale or achieve its objectives efficiently.
+\end{enumerate}
+
+\justify 5.2.3 Overview of Risk Mitigation, Monitoring, Management:
+\begin{enumerate}
+   
+\item Dependency on open-source models:
+\begin{itemize}
+    \item Mitigation: Develop contingency plans to switch to alternative models if the open-source models fail to meet expectations. Explore the possibility of developing proprietary models to reduce reliance on open-source ones.
+    \item Monitoring: Regularly monitor the performance of open-source models and stay updated with any changes or updates.
+    \item Management: Allocate resources to ensure the continuous improvement and maintenance of the open-source models.
+\end{itemize}
+
+\item Perception of job replacement:
+\begin{itemize}
+    \item Mitigation: Communicate the purpose and benefits of the software, emphasizing that it complements human efforts rather than replacing them. Provide training and support to users to help them understand and use the software effectively.
+    \item Monitoring: Monitor user feedback and perceptions to identify any negative sentiments early on and address them promptly.
+    \item Management: Engage with stakeholders and the public to address any concerns or misconceptions about the software's impact on jobs.
+\end{itemize}
+\bigskip
+\item Data privacy and security:
+\begin{itemize}
+    \item Mitigation: Implement strong encryption and access control measures to protect sensitive data. Regularly audit and update security measures to address new threats.
+    \item Monitoring: Monitor access logs and user activity to detect any suspicious behavior or unauthorized access.
+    \item Management: Have a response plan in place in case of a data breach, including notifying affected parties and taking steps to mitigate further damage.
+\end{itemize}
+
+\item  Technology limitations:
+\begin{itemize}
+    \item Mitigation: Stay informed about new technologies and consider adopting them to overcome current limitations. Regularly assess the project's technological needs and capabilities.
+    \item Monitoring: Monitor technological advancements and trends to identify potential solutions to current limitations.
+    \item Management: Allocate resources for research and development to address technological limitations and improve the project's capabilities.
+\end{itemize}
+
+\end{enumerate}
+\bigskip
+
+\justify \textbf{5.3 PROJECT SCHEDULE}
+\justify 5.3.1 Project Task Set:\\
+
+Major tasks in the project stage are:
+\begin{enumerate}
+    \item Requirement Analysis
+    \item Technology Study and Design
+    \item Data Preprocessing
+    \item Coding and Implementation
+    \item Testing and Documentation
+\end{enumerate}
+\pagebreak{}
+
+\justify 5.3.2 Task Network:
+\begin{center}
+   \justify \includegraphics[width=6.5in,height=5.4in]{TASK NETWORK.png}
+\end{center}
+
+\begin{center}
+    Fig 5.3.2: Task Network
+\end{center}
+
+\justify 5.3.3 Timeline Chart:
+
+One of the most common and effective methods of displaying activities (tasks or events) displayed against 
+time is a Gantt chart, which is frequently used in project management. A list of the activities is located on the 
+chart’s left side, and a suitable time scale is located along the top. A bar is used to symbolize each activity, and 
+the position and length of the bar correspond to the activity’s beginning, middle, and finish dates. This enables you to quickly determine: \\
+• What each of the activities entails \\
+• When the start and finish of each action \\
+• How much time is allocated to each activity\\ 
+• Where and by how much some activities intersect with other ones \\
+• The project’s start and finish dates overall \\
+\pagebreak{}
+\bigskip
+\bigskip
+\bigskip
+\bigskip
+\begin{center}
+   \justify \includegraphics[width=6.5in,height=5.7in]{Semester 1 Project Timeline .png}
+\end{center}
+
+\begin{center}
+    Fig 5.3.3: Semester 1 Project Timeline
+\end{center}
+
+\begin{center}
+   \justify \includegraphics[width=6.5in,height=6.0in]{Semester 2 Project Timeline .png}
+\end{center}
+
+\begin{center}
+    Fig 5.3.3: Semester 2 Project Timeline
+\end{center}
+\pagebreak{}
+\bigskip
+
+\justify \textbf{5.4 TEAM ORGANIZATION}
+
+\justify 5.4.1 Team Structure:\\
+
+\begin{center}
+   \justify \includegraphics[width=6.5in,height=4.7in]{Team_Structure.jpg}
+\end{center}
+
+\begin{center}
+    Fig 5.4.1: Team Structure
+\end{center}
+\pagebreak{}
+
+\begin{center} \fontsize{14}{14} \textbf{CHAPTER 6: PROJECT IMPLEMENTATION } \end{center}
+
+\justify \textbf{\fontsize{12}{12}\selectfont 6.1 OVERVIEW OF PROJECT MODULES: }
+
+\begin{enumerate}
+    \item \textbf{Text Summarization}: The Text Summarization module utilizes the Llama 2 70b chat model to condense lengthy news articles and press releases into concise, key-point summaries. This process ensures that essential information is retained and presented efficiently, making it ideal for quick comprehension and suitable for short video formats.
+    
+    \item \textbf{Keyword Extraction}: Employing the GPT-3.5 API, the Keyword Extraction module identifies pivotal words and phrases from the summarized text. This facilitates the retrieval of thematically relevant images and aids in scripting captions that are tightly aligned with the video’s content, enhancing both relevance and viewer engagement.
+    
+    \item \textbf{Monitoring}: The Monitoring module leverages LangChain to oversee the performance and cost-efficiency of the system's AI operations. It ensures that API calls to services like Llama 2 and Deepgram are optimized for both speed and expenditure, crucial for maintaining the application's overall performance within operational budgets.
+    
+    \item \textbf{Image Captioning}: Image Captioning involves generating descriptive texts for images used in videos, enhancing viewer understanding and engagement. This module integrates captions seamlessly with visual content, providing context and enriching the storytelling aspect of the videos.
+    
+    \item \textbf{Image Database (SQL and Pexels API)}: The Image Database module utilizes a dual approach, combining an SQL database for storing and retrieving tagged images with calls to the Pexels API for accessing a broader range of visuals. This hybrid system ensures a rich supply of images that are pertinent to the video’s content.
+    
+    \item \textbf{AI Voice Generation}: The AI Voice Generation module synthesizes natural-sounding audio from the text summaries, providing an auditory narrative to accompany the visual content. This enhances the accessibility and appeal of the videos, making them more engaging for users who prefer auditory learning or are visually impaired.
+    
+    \item \textbf{Audio Stitching (MoviePy)}: Utilizing MoviePy, the Audio Stitching module integrates the AI-generated voiceover with the video timeline, ensuring smooth transitions and synchronization between audio and visual elements. This is essential for creating a professional and cohesive viewing experience.
+    
+    \item \textbf{Website UI (Streamlit)}: The Website UI module is built on Streamlit, offering a user-friendly interface that simplifies the process of uploading text documents and managing the conversion into video content. Streamlit’s clean and intuitive design ensures that users can easily navigate through the different functionalities of VidQuill without requiring extensive technical knowledge.
+\end{enumerate}
+\bigskip
+
+\justify \textbf{\fontsize{12}{12}\selectfont 6.2 TOOLS AND TECHNOLOGIES USED: }
+
+\begin{enumerate}
+
+    \item \textbf{Python}: Python is a versatile programming language that underpins all the scripting and automation in this project. Its vast ecosystem of libraries and frameworks, such as Streamlit and MoviePy, facilitates rapid development and integration of complex software solutions.
+
+    \item \textbf{Llama 2 70b}: Llama 2 70b is a powerful language model developed for generating accurate text summarizations. It processes extensive documents into concise summaries by understanding context and key details, making it ideal for applications requiring quick distillation of long texts into essential points.
+
+    \item \textbf{GPT-3.5}: As an advanced iteration of OpenAI's language models, GPT-3.5 excels in tasks such as keyword extraction, helping to pinpoint relevant terms and phrases with high precision. Its capability to process and analyze natural language makes it indispensable for enhancing content relevance and user engagement.
+
+    \item \textbf{LangSmith}: LangSmith is used for tracking and managing the API calls across different services like Llama 2, Deepgram, and GPT-3.5. It helps in analyzing the cost and efficiency of these services, ensuring that the project stays within budget while maintaining high operational performance.
+
+    \item \textbf{LangChain}: LangChain is utilized for monitoring and managing AI operations within the project. It tracks API usage and costs, and optimizes the system's performance and budget by providing real-time analytics and insights on AI processes.
+
+    \item \textbf{Pexels API}: The Pexels API is crucial for sourcing high-quality images from a vast, freely accessible database. It supports dynamic image retrieval based on specific keywords, enriching the multimedia output with visually appealing and relevant photographs.
+
+    \item \textbf{SQL Database}: SQL databases are used to store, manage, and retrieve structured data efficiently. In this project, they are specifically employed to manage image data with tags, allowing for organized storage and quick access based on keyword matches.
+
+    \item \textbf{Deepgram API}: The Deepgram API offers advanced voice recognition and AI-powered audio processing capabilities. In VidQuill, it is used to generate high-quality synthetic voice from text, providing clear and natural audio narration for the videos.
+
+    \item \textbf{MoviePy}: MoviePy is a video editing library for Python, which makes it possible to automate video production processes. It is used here to stitch audio and visual elements together, enabling seamless integration of voiceovers with images and video footage.
+
+    \item \textbf{Streamlit}: Streamlit is a fast and efficient framework for building web applications in Python. It is particularly favored in this project for its ability to rapidly develop interactive user interfaces, making it easier for end-users to upload documents and manage video creation without deep technical knowledge.
+\end{enumerate}
+
+\pagebreak{}
+
+\begin{center} \fontsize{14}{14} \textbf{CHAPTER 7: SOFTWARE TESTING} \end{center}
+\justify \textbf{\fontsize{12}{12}\selectfont 7.1 TYPES OF TESTING: }
+
+\begin{enumerate}
+    \item \textbf{Functional Testing}: Ensured that each function of the software operated according to the requirement specifications. This included testing features such as text summarization, keyword extraction, image captioning, and video stitching.
+\item \textbf{User Interface Testing}: Validated the user interface for consistency and ease of use. Checked the layout, responsiveness, and overall user experience of the software.
+\item \textbf{Performance Testing}: Assessed the software's responsiveness, stability, and scalability under various loads. Tested how the software performed when processing a large number of press releases and generating videos.
+\item \textbf{Security Testing}: Identified and rectified vulnerabilities in the software to protect against unauthorized access and data breaches. Ensured that user data and sensitive information were secure.
+\item \textbf{Usability Testing}: Evaluate how easy it is for users to learn and use the software. This can involve testing the user interface with actual users to gather feedback on its design and functionality.
+\item \textbf{Integration Testing}: Test how different components of the software work together. This can help ensure that all parts of the software integrate correctly and function as expected.
+\item \textbf{Regression Testing}: After making changes to the software, this type of testing ensures that existing features still work correctly. It helps prevent the introduction of new bugs or issues.
+
+\end{enumerate}
+\bigskip
+\justify \textbf{\fontsize{12}{12}\selectfont 7.2 TEST CASES AND TEST RESULTS: }
+
+\begin{enumerate}
+    \item Functional Testing: Text Summarization
+    \begin{itemize}
+        \item Test Case: Input a long press release text and verify that the output summary is concise yet captures the main points.
+        \item Result: The summary accurately captured the key points of the press release, with a reduction in text length and retention of essential information.
+    \end{itemize}
+
+    \item Functional Testing: Keyword Extraction
+    \begin{itemize}
+        \item Test Case: Provide a press release text and check if the keywords extracted are relevant to the content.
+        \item Result: The extracted keywords were relevant and reflective of the main themes of the press release.
+    \end{itemize}
+
+    \item Functional Testing: Image Captioning
+    \begin{itemize}
+        \item Test Case: Input an image and verify that the generated caption accurately describes the image content.
+        \item Result: The generated caption provided a clear and accurate description of the image.
+    \end{itemize}
+
+    \item Functional Testing: Video Stitching
+    \begin{itemize}
+        \item Test Case: Stitch together images, text overlays, and audio to create a video and verify that the elements are combined seamlessly.
+        \item Result: The video was created without any visible glitches or errors, and the elements were synchronized correctly.
+    \end{itemize}
+
+    \item Performance Testing: Text Summarization
+    \begin{itemize}
+        \item Test Case: Input a large number of press releases and measure the time taken to generate summaries.
+        \item Result: The software was able to generate summaries within an acceptable time frame, even with a large volume of input data.
+    \end{itemize}
+ 
+    \item Security Testing: Data Encryption
+    \begin{itemize}
+        \item Test Case: Check if the sensitive data, such as user information or API keys, is encrypted before storage or transmission.
+        \item Result: The software encrypted sensitive data as expected, ensuring its security.
+    \end{itemize}
+
+    \item Usability Testing: User Interface
+    \begin{itemize}
+        \item Test Case: Ask users to perform common tasks, such as uploading a press release or selecting images, and observe their interactions with the interface.
+        \item Result: Users found the interface intuitive and were able to perform tasks without difficulty.
+    \end{itemize}
+    
+\end{enumerate}
+
+
+\pagebreak{}
+\begin{center} \fontsize{14}{14} \textbf{CHAPTER 8: RESULTS } \end{center}
+
+\justify \textbf{\fontsize{12}{12}\selectfont 8.1 OUTCOMES }
+\bigskip
+
+VidQuill's development and implementation has culminated in a robust video generation tool that utilizes state-of-the-art technologies to convert written content into engaging multimedia presentations. The outcomes are detailed below:\\
+
+
+\noindent 8.1.1 User Interface Outcomes\\
+
+VidQuill's user interface, designed using Streamlit, offers an intuitive and effective experience. Features include:
+\begin{itemize}
+  \item \textbf{Input Flexibility}: Users can type directly into a textbox or upload PDF documents, providing versatility in how content is submitted.
+  \item \textbf{Interactive Features}: A brief description of VidQuill helps orient new users. Additional features like a voice selection dropdown from the Deepgram API enhance user interaction.
+  \item \textbf{Process Transparency}: Demonstrating each step of the video creation process, from summarization to final video output, enhances user understanding and engagement.
+\end{itemize}
+
+\noindent 8.1.2 Video and Audio Processing\\
+
+The project efficiently balances quality and processing time:
+\begin{itemize}
+  \item \textbf{Efficient Production}: Videos are generated within 2-3 minutes, each with a duration of about 30 seconds.
+  \item \textbf{Voice Customization}: Users can preview and select AI-generated voices to ensure the audio matches their preferences.
+  \item \textbf{Audio Challenges}: While effective, the Deepgram API sometimes falters with non-English terms. Transitioning to OpenAI's Whisper API is recommended for diverse language support in production environments.
+\end{itemize}
+
+\noindent 8.1.3 Cost and Efficiency\\
+
+VidQuill's implementation highlights significant cost-effectiveness:
+\begin{itemize}
+  \item \textbf{Low Costs}: The cost for API calls per video generation is remarkably low, at approximately \$0.003.
+  \item \textbf{Monitoring Capabilities}: The LangSmith interface allows tracking of API usage and costs, promoting transparency and budget management.
+\end{itemize}
+
+\noindent 8.1.4 Image Handling and Customization\\
+
+Image sourcing and tagging are optimized for the best results:
+\begin{itemize}
+  \item \textbf{Image Source Recommendation}: Using the SQL database for storing custom images is recommended over relying solely on Pexels API for higher quality and relevance.
+  \item \textbf{Tag Management}: Salesforce Blip generates tags for images. Users can also input custom tags if the autogenerated ones do not meet their needs.
+\end{itemize}
+
+\noindent 8.1.5 Overall Impact\\
+
+VidQuill offers significant advantages for Press Information Bureaus and Media Houses:
+\begin{itemize}
+  \item The tool is quick, cost-effective, and enhances the presentation and consumption of information in the digital age.
+\end{itemize}
+
+\bigskip
+
+\justify \textbf{\fontsize{12}{12}\selectfont 8.2 SCREENSHOTS }
+\\
+\noindent \justify \includegraphics[width=6.2in,height=4.0in]{ss1.jpg}\\
+\noindent \justify \includegraphics[width=6.2in,height=4.0in]{ss2.jpg}\\
+\noindent \justify \includegraphics[width=5.6in,height=4.8in]{ss8.jpg}\\
+\noindent \justify \includegraphics[width=6.2in,height=4.0in]{ss3.jpg}\\
+\noindent \justify \includegraphics[width=6.2in,height=4.0in]{ss4.jpg}\\
+\noindent \justify \includegraphics[width=6.2in,height=4.0in]{ss5.jpg}\\
+\noindent \justify \includegraphics[width=6.2in,height=4.0in]{ss6.jpg}\\
+\noindent \justify \includegraphics[width=6.2in,height=4.0in]{ss7.jpg}\\
+
+
+\bigskip
+
+\pagebreak{}
+\begin{center} \fontsize{14}{14} \textbf{CHAPTER 9: CONCLUSIONS } \end{center}
+
+\justify \textbf{\fontsize{12}{12}\selectfont 9.1 CONCLUSIONS: }\\
+
+In conclusion, the PIB Press Information Bureau project presents a forward-
+thinking approach to modernizing information dissemination. By transforming
+traditional written press releases into engaging one-minute videos, the project
+addresses the contemporary challenge of capturing audience attention in a dig-
+ital age. The integration of text summarization, keyword extraction, and mul-
+media elements not only enhance the accessibility of information but also
+provide a dynamic and visually appealing platform for communication.\\
+
+The advantages of the project, including enhanced information accessibility,
+efficient content consumption, and multimedia enrichment, position it as a valuable-
+able tool for government agencies, corporations, educational institutions, and
+various other domains. The user-friendly interface facilitates seamless interaction, allowing Officers and Users to actively participate in the content creation
+process.\\
+
+While the project showcases promising features, there are considerations for
+future enhancements. The potential integration of voice-over capabilities, AI-
+generated visuals, dynamic content customization, interactive elements in videos,
+and real-time collaboration and approval processes open avenues for further
+innovation. These future scopes align with evolving user preferences and tech-
+no logical advancements, ensuring the project remains adaptive and relevant.\\
+
+In summary, the PIB Press Information Bureau project marks a significant
+step toward redefining communication strategies. Its potential applications across
+diverse domains and the envisioned future enhancements position it as a versa-
+tile and impactful solution. As technology continues to evolve, the project stands
+ready to embrace advancements, providing a platform for effective, engaging,
+and accessible information dissemination.
+
+\pagebreak{}
+
+
+\justify \textbf{\fontsize{12}{12}\selectfont 9.2 FUTURE WORK: }
+
+\begin{enumerate}[label=\arabic*.]
+    \item \textbf{Enhanced Image Selection:}
+    \begin{itemize}
+        \item \textit{Future Scope:} This feature aims to improve the relevance of images used in the video creation process by allowing users to select specific images for each keyword extracted from the text. By providing users with the ability to choose images, the system can minimize outliers and ensure that the visual content aligns more closely with the context and message of the press release. This level of customization can lead to more engaging and visually appealing videos.
+    \end{itemize}
+
+    \item \textbf{AI-Generated Visuals:}
+    \begin{itemize}
+        \item \textit{Future Scope:} To address scenarios where relevant images are limited or unavailable in the database, the project could explore the use of AI-generated visuals. Advanced generative models, such as Generative Adversarial Networks (GANs), could be employed to create contextually relevant images, enhancing the visual appeal and informativeness of the generated videos.
+    \end{itemize}
+
+    \item \textbf{Tone Customization:}
+    \begin{itemize}
+        \item \textit{Future Scope:} This feature allows users to select the tone or bias of the generated text, catering to the diverse needs and preferences of media houses. By providing options for tone selection through buttons or input text for one-shot or few-shot learning, the system can accommodate different editorial styles and perspectives. This customization can help users tailor the text to better match their intended message and audience, enhancing the overall impact of the video content.
+    \end{itemize}
+
+    \item \textbf{Text Summary Editing:}
+    \begin{itemize}
+        \item \textit{Future Scope:} Text summarization is a crucial aspect of the video creation process, but there may be instances where the generated summary needs further refinement. This feature enables users to edit the text summary manually, allowing them to correct errors, adjust the tone, or add additional information as needed. By providing this editing capability, the system empowers users to create more accurate and impactful summaries that better convey the key points of the press release.
+    \end{itemize}
+
+    \item \textbf{Image Source Selection:}
+    \begin{itemize}
+        \item \textit{Future Scope:} This feature offers users the flexibility to choose between using the Pexels API or querying a database for images based on input images. By providing access to a wider range of images, users can select visuals that are more relevant and meaningful to their content. This customization allows for more tailored and visually appealing videos, enhancing the overall quality and effectiveness of the video content.
+    \end{itemize}
+
+    \item \textbf{Real-time Collaboration:}
+    \begin{itemize}
+        \item \textit{Future Scope:} Expanding the project to support real-time collaboration processes could streamline content creation. Officers could collaborate on the content creation process, provide feedback in real-time, and collectively help to improve the videos. This feature would improve efficiency and facilitate seamless collaboration among project stakeholders.
+    \end{itemize}
+\end{enumerate}
+\bigskip
+
+\justify \textbf{9.3 APPLICATIONS:}
+
+\begin{enumerate}[label=\arabic*.]
+    \item \textbf{Government Information Dissemination:}
+    \begin{itemize}
+        \item \textit{Application:} The project can be applied to government agencies, like the Press Information Bureau, for disseminating official information to the public. Transforming press releases into engaging videos can make government communication more accessible and understandable to a wider audience.
+    \end{itemize}
+
+    \item \textbf{Corporate Communications:}
+    \begin{itemize}
+        \item \textit{Application:} Corporations and businesses can use a similar system to communicate important updates, announcements, and press releases in a more engaging format. This application can enhance internal and external communication strategies.
+    \end{itemize}
+
+    \item \textbf{Educational Institutions:}
+    \begin{itemize}
+        \item \textit{Application:} Educational institutions can leverage the project to transform academic announcements, research findings, and important information into concise and visually appealing videos. This can enhance communication with students, faculty, and the broader academic community.
+    \end{itemize}
+
+    \item \textbf{News and Media Outlets:}
+    \begin{itemize}
+        \item \textit{Application:} News agencies can use the project to quickly generate video summaries of breaking news or important events. This application can enhance the delivery of news content to digital audiences with varying preferences for consuming information.
+    \end{itemize}
+
+    \item \textbf{Marketing and Public Relations:}
+    \begin{itemize}
+        \item \textit{Application:} Marketing teams and public relations departments can employ a similar system to create dynamic and visually appealing content for product launches, promotional activities, and brand messaging. This application can enhance the marketing strategy and brand image.
+    \end{itemize}
+\end{enumerate}
+
+
+\pagebreak{}
+
+
+\begin{center}
+    \textbf{APPENDIX A: PROBLEM STATEMENT FEASIBILITY ASSESSMENT}
+\end{center} 
+
+In this appendix, we conduct a feasibility assessment of the problem statement for the PIB Press Information Bureau project. We employ satisfiability analysis and explore the potential complexity classes using modern algebra and relevant mathematical models.
+
+\subsubsection*{1. Satisfiability Analysis}
+
+Satisfiability analysis is crucial in ensuring the logical consistency and feasibility of the project components. We analyze the satisfiability of logical expressions governing the text summarization, keyword extraction, and multimedia integration components. This assessment ensures that the algorithms and models employed in these components can effectively handle a diverse range of input scenarios.
+
+\subsubsection*{2. Complexity Class Consideration}
+
+To assess the computational complexity of the problem, we delve into its classification within complexity theory, utilizing modern algebra and mathematical models.
+
+\subsubsection*{2.1 NP Hard}
+
+Given the intricate nature of text summarization, keyword extraction, and multimedia integration, we explore whether the problem is NP-Hard. If classified as NP-Hard, it indicates that the project is at least as challenging as the hardest problems in NP, posing potential computational complexities.
+
+\subsubsection*{2.2 NP-Complete}
+
+Considering the interplay of various components in our project, we examine whether it falls into the category of NP-complete problems. If so, it implies a level of computational complexity where finding an efficient solution for one component can lead to solutions for related components.
+
+\subsubsection*{2.3 P Type}
+
+Given the practical nature of the project, we aim to assess if it falls into the P-type, indicating that there exists an algorithm to solve it in polynomial time. This classification would imply that the project is efficiently solvable, facilitating real-time generation of videos from press releases.
+
+\subsubsection*{3. Summary}
+
+The satisfiability analysis and complexity class consideration provide essential insights into the feasibility and potential challenges of the PIB Press Information Bureau project. These assessments serve as a foundation for understanding the computational implications of the chosen approaches and algorithms.
+
+
+\pagebreak{}
+
+\begin{center} \textbf{APPENDIX B: DETAILS OF PUBLISHED PAPERS} \end{center}
+
+No paper published
+
+
+
+\pagebreak{}
+
+\begin{center} \fontsize{12}{12}\textbf{APPENDIX C: PLAGIARISM REPORT} \end{center}
+
+\includepdf[pages=-]{Plagiarism Report.pdf}
+
+\pagebreak{}
+ \begin{center} \textbf{REFERENCES } \end{center}
+
+
+  \begin{itemize}
+
+    \item
+    \textbf{"Make-A-Video: Text-to-Video Generation without Text-Video Data"} by Uriel Singer, Adam Polyak, Thomas Hayes, Xi Yin, Jie An, Songyang Zhang, Qiyuan Hu. (2022)
+
+  \item \textbf{"Generating Narrative Video Summaries from News Articles"} by Yang, Yuan, et al. (2019)
+
+  \item
+    \textbf{"Video Generation from Text Employing Latent Path Construction for Temporal Modeling"} by Amir Mazaheri; Mubarak Shah. (2022)
+  \item
+    \textbf{"Automatic Video Summarization with Key Frames and Key Sentences"} by Cheng, Luo, et al. (2016)
+  \item \textbf{"Hierarchical Video Summarization with Multi-Scale Attention Networks"} by Xu, Gao, et al. (2018)
+  \item
+    \textbf{"Video Summarization by Key Events Detection and Sentence Selection"} by Song, Wang, et al. (2017)
+
+  \end{itemize}
+\\
+
+
+
+\noindent  
+
+\noindent  
+
+\noindent  
+
+\noindent  
+
+\noindent  
+
+\noindent  
+
+\noindent  
+
+\noindent  
+
+\noindent  
+
+\noindent  
+
+\noindent  
+
+\noindent  
+\pagebreak{}
+
+
+\end{document}
