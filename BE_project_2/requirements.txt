@@ -10,3 +10,4 @@ beautifulsoup4
 youtube_transcript_api
 jsonschema
 sentence-transformers
+faiss-cpu
